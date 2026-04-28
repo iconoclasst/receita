@@ -157,10 +157,42 @@
     .container {
         grid-template-areas: 
             "cabecalho"
-            "conteudo"
-            "sidebar";
+            "sidebar"
+            "conteudo";
         grid-template-columns: 1fr;
         grid-template-rows: auto; 
+    }
+
+    .sidebar {
+        position: static;
+        margin: 10px 20px;
+        padding: 10px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .sidebar li {
+        margin-bottom: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .foto-receita {
+        width: 80%; 
+        max-width: 200px;  
+        height: auto;   
+        margin: 15px auto 0 auto;
+        display: block;
     }
 
     .cabecalho {
@@ -183,23 +215,12 @@
         font-size: 1.1rem;
     }
 
-    .card {
-        flex-direction: column;
-        text-align: center;
-    }
-
+    
     .texto {
         max-width: 100%;
     }
 
-    .foto-receita {
-        width: 100%;   
-        height: auto;   
-        margin-top: 15px;
-    }
+    
 
-    .sidebar {
-        position: static;
-        margin: 20px;
-    }
+    
 }
